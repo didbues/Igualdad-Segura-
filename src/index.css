@@ -1,0 +1,100 @@
+:root {
+  --bg-page: #fbfbfe;
+  --bg-card: #ffffff;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+  --text-soft: #6b7280;
+
+  --purple-50: #f5f3ff;
+  --purple-100: #ede9fe;
+  --purple-200: #ddd6fe;
+  --purple-500: #8b5cf6;
+  --purple-600: #7c3aed;
+  --purple-700: #6d28d9;
+
+  --magenta-600: #c026d3;
+
+  --teal-50: #ecfdf5;
+  --teal-100: #d1fae5;
+  --teal-600: #059669;
+  --teal-700: #047857;
+
+  --amber-50: #fefce8;
+  --amber-100: #fef3c7;
+  --amber-400: #facc15;
+  --amber-500: #f59e0b;
+  --amber-700: #b45309;
+
+  --rose-50: #fdf2f8;
+  --rose-100: #fce7f3;
+  --rose-600: #db2777;
+
+  --indigo-50: #eef2ff;
+  --indigo-600: #4f46e5;
+
+  --border-soft: rgba(124, 58, 237, 0.12);
+  --border-neutral: #e5e7eb;
+
+  --shadow-xs: 0 2px 6px rgba(17, 24, 39, 0.04);
+  --shadow-sm: 0 6px 20px rgba(109, 40, 217, 0.06);
+  --shadow-md: 0 12px 32px rgba(109, 40, 217, 0.1);
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 12% 8%, rgba(237, 233, 254, 0.75) 0%, transparent 42%),
+    radial-gradient(circle at 88% 12%, rgba(254, 249, 195, 0.7) 0%, transparent 40%),
+    radial-gradient(circle at 80% 85%, rgba(209, 250, 229, 0.45) 0%, transparent 40%),
+    var(--bg-page);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.18;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
